@@ -1,20 +1,11 @@
-<div class="card" style="width: 18rem;" id="<%= dom_id property %>">
+<div class="card border border-secondary" style="width: 18rem;" id="<%= dom_id property %>">
   <div id="carousel_<%= dom_id property %>" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carousel_<%= dom_id property %>" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carousel_<%= dom_id property %> %>" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carousel_<%= dom_id property %> %>" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
     <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="2000">
-        <%= image_tag 'house01.jpeg', alt: 'house-01', class:"d-block w-100" %>
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <%= image_tag 'house02.jpg', alt: 'house-02', class:"d-block w-100" %>
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <%= image_tag 'house03.jpg', alt: 'house-01', class:"d-block w-100" %>
-      </div>
+      <% property.pictures.each_with_index do |picture, index| %>
+          <div class="carousel-item <%= 'active' if index == 0%>">
+            <%= image_tag (picture), class: 'd-block w-100' %>
+          </div>
+      <% end%>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carousel_<%= dom_id property %>" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>

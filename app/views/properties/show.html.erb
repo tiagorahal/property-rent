@@ -1,10 +1,12 @@
 <p style="color: green"><%= notice %></p>
 
+<div style="width: 200px">
+  <%= image_tag (@property.pictures[2]), class:'d-block w-100'%>
+</div>
+
 <%= render @property %>
 
-<div>
-  <%= link_to "Edit this property", edit_property_path(@property) %> |
-  <%= link_to "Back to properties", properties_path %>
-
-  <%= button_to "Destroy this property", @property, method: :delete %>
+<div class="mt-1">
+  <%= link_to "Edit", edit_property_path(@property), class:"btn btn-primary m-1" %>
+  <%= link_to "Back", properties_path, class:"btn btn-primary m-1" %>
 </div>
