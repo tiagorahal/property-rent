@@ -2,6 +2,10 @@
   margin-bottom: 800px;
 }
 
+.card {
+  border: black solid 2px
+}
+
 footer {
   position: fixed;
   left: 0;
