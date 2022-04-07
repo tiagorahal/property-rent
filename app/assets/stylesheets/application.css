@@ -3,6 +3,11 @@
   background-color: #F8F9FE;
 }
 
+#properties {
+  overflow: auto;
+  max-height: 90vh;
+}
+
 .card {
   border: black solid 2px;
 }
