@@ -2,13 +2,13 @@
 
 <h1>Properties</h1>
 
-<div id="properties">
+<div class="row d-md-flex flex-row flex-wrap justify-contente-aroud align-items-center mb-5" id="properties">
   <% @properties.each do |property| %>
-    <%= render property %>
-    <p>
-      <%= link_to "Show this property", property %>
-    </p>
+    <div class="col m-auto card-with-button">
+      <%= render property %>
+      <p class="mt-1">
+      <%= link_to "Show this property", property, class:"btn btn-primary" %>
+      </p>
+    </div>
   <% end %>
 </div>
-
-<%= link_to "New property", new_property_path %>

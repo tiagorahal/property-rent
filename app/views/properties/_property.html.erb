@@ -1,27 +1,57 @@
-<div id="<%= dom_id property %>">
-  <p>
-    <strong>Name:</strong>
-    <%= property.name %>
-  </p>
-
-  <p>
-    <strong>Address:</strong>
-    <%= property.address %>
-  </p>
-
-  <p>
-    <strong>Rooms:</strong>
-    <%= property.rooms %>
-  </p>
-
-  <p>
-    <strong>Bathrooms:</strong>
-    <%= property.bathrooms %>
-  </p>
-
-  <p>
-    <strong>Price:</strong>
-    <%= property.price %>
-  </p>
-
+<div class="card" style="width: 18rem;" id="<%= dom_id property %>">
+  <div id="carousel_<%= dom_id property %>" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carousel_<%= dom_id property %>" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carousel_<%= dom_id property %> %>" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carousel_<%= dom_id property %> %>" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <%= image_tag 'house01.jpeg', alt: 'house-01', class:"d-block w-100" %>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <%= image_tag 'house02.jpg', alt: 'house-02', class:"d-block w-100" %>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <%= image_tag 'house03.jpg', alt: 'house-01', class:"d-block w-100" %>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel_<%= dom_id property %>" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel_<%= dom_id property %>" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="card-body">
+    <p class="card-text">
+      <strong>
+        Name:
+      </strong>
+      <%= property.name %>
+      <br />
+      <strong>
+        Address:
+      </strong>
+      <%= property.address %>
+      <br />
+      <strong>
+        Rooms:
+      </strong>
+      <%= property.rooms %>
+      <br />
+      <strong>
+        Bathrooms:
+      </strong>
+      <%= property.bathrooms %>
+      <br />
+      <strong>
+        Price:
+      </strong>
+      <%= property.price %>
+      <br />
+    </p>
+  </div>
 </div>
