@@ -1,5 +1,5 @@
-<div class="mb-1 card " style="width: 18rem;" id="<%= dom_id property %>">
-  <div id="carousel_<%= dom_id property %>" class="m-2 rounded carousel slide" data-bs-ride="carousel">
+<div class="mb-1 card" style="width: 19rem;" id="<%= dom_id property %>">
+  <div id="carousel_<%= dom_id property %>" class="mt-2 mx-2  rounded carousel slide" data-bs-ride="carousel">
     <div class="carousel-pics carousel-inner">
       <% property.pictures.each_with_index do |picture, index| %>
           <div class="carousel-item <%= 'active' if index == 0%>">
@@ -17,31 +17,24 @@
     </button>
   </div>
   <div class="card-body">
-    <p class="card-text">
-      <strong>
-        Name:
-      </strong>
       <%= property.name %>
-      <br />
-      <strong>
-        Address:
-      </strong>
+    <p class="pt-0 card-text text-capitalize">
+      <strong class="fs-2">
       <%= property.address %>
-      <br />
-      <strong>
-        Rooms:
       </strong>
+      <br />
+      <br />
       <%= property.rooms %>
-      <br />
-      <strong>
-        Bathrooms:
-      </strong>
+       bedrooms
+       - 
       <%= property.bathrooms %>
-      <br />
-      <strong>
-        Price:
-      </strong>
+       bath
+      <br /><br />
+      <strong class="fs-3">          
+      R$
       <%= property.price %>
+      </strong>
+      /mo
       <br />
       <%= link_to "Show this Property", property, class:"btn btn-secondary" %>
     </p>
