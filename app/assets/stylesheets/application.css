@@ -49,6 +49,21 @@ footer {
   text-align: center;
 }
 
+.map-responsive {
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
+.map-responsive iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
 .sidenav {
   width: 18rem;
   position: fixed;
@@ -83,5 +98,9 @@ footer {
 
   .lower-half {
     margin: 2vh 2vh 2vh 2vh;
+  }
+
+  .card-text {
+    font-size: 0.6rem;
   }
 }
