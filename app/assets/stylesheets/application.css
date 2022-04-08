@@ -34,15 +34,25 @@
 }
 
 .form-new {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20vh;
+  margin-bottom: 30vh;
 }
 
 .form-edit {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20vh;
+  margin-bottom: 30vh;
+}
+
+.show-div {
+  
 }
 
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   color: white;
@@ -65,7 +75,7 @@ footer {
 }
 
 .sidenav {
-  width: 18rem;
+  width: 23rem;
   position: fixed;
   z-index: 1;
   top: 50vh;
@@ -88,7 +98,7 @@ footer {
 }
 
 .lower-half {
-  margin: 2vh 38vh 0 2vh;
+  margin: 2vh 42vh 8vh 2vh;
 }
 
 @media (max-width: 767.98px) {
