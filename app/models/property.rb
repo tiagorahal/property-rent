@@ -5,7 +5,7 @@ class Property < ApplicationRecord
 
   def pictures_as_carousel
     pictures.map do |picture|
-      picture.variant(resize_to_limit: [300, 300]).processed
+      picture.variant(resize_to_limit: [900, 900]).processed
     end
   end
 end

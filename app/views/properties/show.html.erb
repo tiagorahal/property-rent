@@ -1,10 +1,8 @@
-<p style="color: green"><%= notice %></p>
-
-<div style="width: 200px">
-  <%= image_tag (@property.pictures[2]), class:'d-block w-100'%>
+<div style="width: 100%vh%; height: 50vh; background-image: url(<%= rails_blob_url(@property.pictures[2]) %>); background-position: center; background-repeat: no-repeat; background-size: cover;">
+  <p>
+    lorem ipsum
+  </p>
 </div>
-
-<%= render @property %>
 
 <div class="mt-1">
   <%= link_to "Edit", edit_property_path(@property), class:"btn btn-primary m-1" %>
