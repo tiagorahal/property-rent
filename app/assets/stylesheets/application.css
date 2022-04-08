@@ -48,11 +48,18 @@
 }
 
 footer {
+  background-color: rgb(248,249,254);
   position: relative;
   bottom: 0;
   width: 100%;
   color: white;
   text-align: center;
+}
+
+.footer-link {
+  text-decoration: none;
+  color:white;
+  padding: 0 5px;
 }
 
 .map-responsive {
@@ -70,18 +77,7 @@ footer {
   position:absolute;
 }
 
-.sidenav {
-  border: grey solid 1px;
-  border-radius: 5px;
-  width: 23rem;
-  position: fixed;
-  z-index: 1;
-  top: 50vh;
-  right: 3vh;
-  background: white;
-  overflow-x: hidden;
-  padding: 2vh;
-}
+
 
 .float-link {
   color: black;
@@ -90,7 +86,7 @@ footer {
 }
 
 .lower-half {
-  margin: 2vh 42vh 8vh 2vh;
+  margin: 2vh 45vh 8vh 2vh;
 }
 
 @media (max-width: 767.98px) {
@@ -104,5 +100,20 @@ footer {
 
   .card-text {
     font-size: 0.6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .sidenav {
+    border: grey solid 1px;
+    border-radius: 5px;
+    width: 23rem;
+    position: fixed;
+    z-index: 1;
+    top: 50vh;
+    right: 3vh;
+    background: white;
+    overflow-x: hidden;
+    padding: 2vh;
   }
 }
