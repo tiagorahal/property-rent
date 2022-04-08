@@ -1,14 +1,18 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Properties</h1>
-
-<div class="row d-md-flex flex-row flex-wrap justify-contente-aroud align-items-center mb-5" id="properties">
-  <% @properties.each do |property| %>
-    <div class="col m-auto card-with-button">
-      <%= render property %>
-      <p class="mt-1">
-      <%= link_to "Show this Property", property, class:"btn btn-primary" %>
-      </p>
-    </div>
-  <% end %>
+<div class="row">
+  <div class="col-sm-12 col-md-6 d-md-flex flex-row flex-wrap justify-content-start align-items-center mb-5" id="properties">
+    <% @properties.each do |property| %>
+      <div class="card-with-button col d-flex flex-column justify-content-center align-items-center card-with-button">
+        <%= render property %>        
+      </div>
+    <% end %>
+  </div>
+  <iframe
+    class="col-sm-12 col-md-6" 
+    src="https://maps.google.com/maps?q=Edificio%20Office%20Green%20-%20R.%20da%20Pra%C3%A7a,%20241&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    width="600"
+    height="800"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+  />
 </div>

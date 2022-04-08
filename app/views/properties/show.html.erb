@@ -1,12 +1,179 @@
-<p style="color: green"><%= notice %></p>
+<div class="d-flex flex-column justify-content-between align-items-end" style="width: 100%; height: 60vh; background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(<%= rails_blob_url(@property.pictures[2]) %>); background-position: center; background-repeat: no-repeat; background-size: cover;">
+  <%= link_to "Edit", edit_property_path(@property), class:"btn btn-secondary m-1 align-self-start" %>
 
-<div style="width: 200px">
-  <%= image_tag (@property.pictures[2]), class:'d-block w-100'%>
+  <div class="text-white align-self-start px-5 pb-2" style="width: 25rem; margin: 0 0 1vh 1vh">    
+    <div class="">
+      
+      <h5 class="text-capitalize card-title pt-1">
+        <%= @property.name %>
+      </h5>
+      <h4 class="text-capitalize">
+        <%= @property.address %>
+      </h4>
+      <p class="card-text">
+        <i class="bi bi-door-closed"></i>
+        <%= @property.rooms %>
+        Bed
+        &nbsp;
+        &nbsp;
+        <i class="bi bi-bag"></i>
+        <%= @property.bathrooms %>
+        Bath
+        &nbsp;
+        &nbsp;
+        <i class="bi bi-house"></i>
+        <%= rand(50...190) %>
+        sqm
+        &nbsp;
+        &nbsp;
+        <i class="bi bi-cone-striped"></i>
+        <%= rand(1...4) %>
+        Parking Slot
+      </p>
+      
+    </div>
+  </div>
+
+
 </div>
 
-<%= render @property %>
 
-<div class="mt-1">
-  <%= link_to "Edit", edit_property_path(@property), class:"btn btn-primary m-1" %>
-  <%= link_to "Back", properties_path, class:"btn btn-primary m-1" %>
+<div class="d-flex flex-column justify-content-center sidenav">
+  <p class="px-2">
+    <strong class="fs-5">          
+      R$
+      <%= @property.price %>     
+      /mo
+    </strong>
+  </p>
+
+  <p class="px-2">
+    Available 
+    <strong class="fs-6">          
+       <%= rand(1...30) %>th Apr
+    </strong>
+  </p>
+  <button type="button" class="mb-2 py-2 text-start border border-dark btn btn-white btn-lg btn-block"><i class="bi bi-calendar-event"></i> Choose dates</button>
+  <button type="button" class="rounded-pill mb-2 btn btn-dark btn-lg btn-block">Check availability</button>
+  <button type="button" class="rounded-pill btn btn-secondary btn-lg btn-block"><i class="bi bi-whatsapp"></i> WhatsApp us</button>
+  <a class="float-link" href="#services">Or contact us</a>
+</div>
+
+
+<div class="lower-half">
+  <p>
+    <strong class="pb-2 fs-4">
+      Description
+    </strong>
+    <br />
+    <br />
+   Nullam suscipit justo felis, sit amet sagittis nisl ultricies quis. Maecenas non enim leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque ultricies ex nisi, vel rutrum odio cursus vitae. Phasellus libero tellus, pharetra sed auctor id, pretium eu felis. Cras aliquam purus et sapien tincidunt, ac consectetur tellus cursus. Vivamus hendrerit tortor sit amet ipsum pharetra dignissim. Nam a neque ullamcorper, dignissim mi sed, convallis quam. Nullam viverra ante nec velit bibendum sagittis. Etiam semper, purus suscipit aliquam malesuada, lectus tellus lobortis tortor, consectetur sodales justo tortor ut nisi. Sed vitae molestie enim, vel tristique tellus. Sed a mauris ante. Ut non eros quis lacus molestie accumsan. Phasellus nec velit nec nisl pharetra laoreet. Donec scelerisque lacus at ante pellentesque sodales. Suspendisse a tellus tristique, maximus ligula at, pharetra massa.
+  </p>
+  <br />
+  <p>
+    <strong class="pb-2 fs-4">
+      Room Arrangement
+    </strong>
+    <br />
+    <br />
+    <i class="bi bi-door-closed"></i>
+    <strong class="fw-0">
+      Queen-size bed
+    </strong>
+    <br />
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    Bedroom
+  </p>
+  <br />
+  <p>
+    <strong class="pb-2 fs-4">
+      Apartment Amenities
+    </strong>
+    <br />
+    <br />
+    <i class="bi bi-router"></i> 
+    <strong class="fw-0">
+      Free-wifi
+    </strong>
+    <br />
+    <br />
+    <i class="bi bi-tv"></i> 
+    <strong class="fw-0">
+      Smart tv
+    </strong>
+    <br />
+    <br />
+    <i class="bi bi-gift"></i> 
+    <strong class="fw-0">
+      Welcome Kit
+    </strong>
+    <br />
+  </p>
+  <br />
+  <p>
+    <strong class="pb-2 fs-4">
+      Build Features
+    </strong>
+    <br />
+    <br />
+    <i class="bi bi-person-badge"></i> 
+    <strong class="fw-0">
+      Doorman
+    </strong>
+    <br />
+  </p>
+  <br />
+  <p>
+    <strong class="fs-4">
+      Standards
+    </strong>
+  </p>
+
+  <div class="row d-flex flex-row flew-wrap justify-content-start align-items-start">
+  
+    <div class="col-sm-12 col-md-6 col-lg-4 m-1 card" style="width: 18rem;"> 
+      <%= image_tag 'wifi.jpg', class: 'card-img-top mt-2' %>     
+      <div class="card-body text-center">
+        <h5 class="card-title">Lightning Fast - Wifi</h5>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-4 m-1 card" style="width: 18rem;">
+      <%= image_tag 'bed.jpg', class: 'card-img-top mt-2' %>
+      <div class="card-body text-center">
+        <h5 class="card-title">Luxurious Bed</h5>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-4 m-1 card" style="width: 18rem;">
+      <%= image_tag 'linen.jpg', class: 'card-img-top mt-2' %>
+      <div class="card-body text-center">
+        <h5 class="card-title">Premium Linen & Towels</h5>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-4 m-1 card" style="width: 18rem;">
+      <%= image_tag 'fully.jpg', class: 'card-img-top mt-2' %>
+      <div class="card-body text-center">
+        <h5 class="card-title">Fully Furnished</h5>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="map mt-5">
+    <p>
+      <strong class="fs-4">
+        Location
+      </strong>
+      <br />
+      <%= @property.address %> -
+       Sala 712/713, Pedra Branca, Palhoça - SC
+    </p>
+    <div class="map-responsive">
+      <iframe src="https://maps.google.com/maps?q=Edificio%20Office%20Green%20-%20R.%20da%20Pra%C3%A7a,%20241&t=&z=13&ie=UTF8&iwloc=&output=embed" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
 </div>
