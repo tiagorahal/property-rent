@@ -6,8 +6,16 @@
 
 - Rails
 - Ruby
+- PostgreSQL
 - VScode
 - Git & GitHub
+
+### Prerequisites
+
+- Ruby Version 3.1.1 or higher
+- Rails Version 7 or higher
+- Atom or VSCode 
+- Git
 
 ## Getting Started
 
