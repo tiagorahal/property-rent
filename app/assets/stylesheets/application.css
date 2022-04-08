@@ -1,6 +1,16 @@
+#header {
+  overflow: auto;
+  top: 0;
+  width: 100%;
+}
+
 #main {
   margin-bottom: 800px;
   background-color: #F8F9FE;
+}
+
+.card-with-button {
+  margin: 2vh 1vh;
 }
 
 #properties {
@@ -17,9 +27,20 @@
   height: 170px;
 }
 
+.form-new {
+  margin-top: 20vh;
+  margin-left: 35vh;
+  margin: auto;
+}
+
+.form-edit {
+  margin-top: 20vh;
+  margin-left: 35vh;
+  margin: auto;
+}
+
 footer {
   position: fixed;
-  left: 0;
   bottom: 0;
   width: 100%;
   color: white;
