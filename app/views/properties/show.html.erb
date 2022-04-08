@@ -1,7 +1,7 @@
-<div class="d-flex justify-content-start align-items-end" style="width: 100%; height: 60vh; background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(<%= rails_blob_url(@property.pictures[2]) %>); background-position: center; background-repeat: no-repeat; background-size: cover;">
+<div class="d-flex flex-column justify-content-between align-items-end" style="width: 100%; height: 60vh; background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(<%= rails_blob_url(@property.pictures[2]) %>); background-position: center; background-repeat: no-repeat; background-size: cover;">
   <%= link_to "Edit", edit_property_path(@property), class:"btn btn-secondary m-1 align-self-start" %>
 
-  <div class="text-white" style="width: 25rem; margin: 0 0 1vh 1vh">    
+  <div class="text-white align-self-start mx-5 pb-2" style="width: 25rem; margin: 0 0 1vh 1vh">    
     <div class="">
       
       <h5 class="text-capitalize card-title pt-1">
@@ -27,7 +27,7 @@
         &nbsp;
         &nbsp;
         <i class="bi bi-cone-striped"></i>
-        <%= rand(1...14) %>
+        <%= rand(1...4) %>
         Parking Slot
       </p>
       
@@ -42,7 +42,7 @@
   <a href="#clients">Clients</a>
   <a href="#contact">Contact</a>
 </div>
-<div class="lower-half" style="margin: 2vh 38vh 0 2vh;">
+<div class="lower-half">
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sollicitudin odio ut dolor ultrices pellentesque. Integer consectetur leo consequat orci blandit, sed sagittis sem aliquam. Nulla placerat ac velit in posuere. Ut malesuada ac elit ac sodales. Morbi tristique urna ac massa aliquet, at malesuada lorem euismod. Suspendisse ut suscipit erat. Morbi finibus dui ligula. In egestas eu libero vitae iaculis. Vestibulum eu posuere arcu.
 

@@ -72,3 +72,16 @@ footer {
   color: #064579;
 }
 
+.lower-half {
+  margin: 2vh 38vh 0 2vh;
+}
+
+@media (max-width: 767.98px) {
+  .sidenav {
+    display: none;
+  }
+
+  .lower-half {
+    margin: 2vh 2vh 2vh 2vh;
+  }
+}
