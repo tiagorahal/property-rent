@@ -6,7 +6,7 @@
 
 #main {
   margin-bottom: 800px;
-  background-color: #F8F9FE;
+  background-color: #f8f9fe;
 }
 
 .card-with-button {
@@ -28,14 +28,10 @@
 }
 
 .form-new {
-  margin-top: 20vh;
-  margin-left: 35vh;
   margin: auto;
 }
 
 .form-edit {
-  margin-top: 20vh;
-  margin-left: 35vh;
   margin: auto;
 }
 
