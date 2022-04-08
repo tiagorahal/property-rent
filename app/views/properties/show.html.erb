@@ -38,11 +38,25 @@
 </div>
 
 
-<div class="sidenav">
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#clients">Clients</a>
-  <a href="#contact">Contact</a>
+<div class="d-flex flex-column justify-content-center sidenav">
+  <p class="px-2">
+    <strong class="fs-5">          
+      R$
+      <%= @property.price %>     
+      /mo
+    </strong>
+  </p>
+
+  <p class="px-2">
+    Available 
+    <strong class="fs-6">          
+       <%= rand(1...30) %>th Apr
+    </strong>
+  </p>
+  <button type="button" class="mb-2 py-2 text-start border border-dark btn btn-white btn-lg btn-block"><i class="bi bi-calendar-event"></i> Choose dates</button>
+  <button type="button" class="rounded-pill mb-2 btn btn-dark btn-lg btn-block">Check availability</button>
+  <button type="button" class="rounded-pill btn btn-secondary btn-lg btn-block"><i class="bi bi-whatsapp"></i> WhatsApp us</button>
+  <a class="float-link" href="#services">Or contact us</a>
 </div>
 
 
@@ -107,10 +121,6 @@
     <i class="bi bi-person-badge"></i> 
     <strong class="fw-0">
       Doorman
-    </strong>
-    <br />
-    <br />
-    <i class= mb-4
     </strong>
     <br />
   </p>

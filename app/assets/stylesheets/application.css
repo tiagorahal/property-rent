@@ -47,10 +47,6 @@
   margin-bottom: 30vh;
 }
 
-.show-div {
-  
-}
-
 footer {
   position: relative;
   bottom: 0;
@@ -75,26 +71,22 @@ footer {
 }
 
 .sidenav {
+  border: grey solid 1px;
+  border-radius: 5px;
   width: 23rem;
   position: fixed;
   z-index: 1;
   top: 50vh;
   right: 3vh;
-  background: #eee;
+  background: white;
   overflow-x: hidden;
-  padding: 8px 0;
+  padding: 2vh;
 }
 
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #2196F3;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #064579;
+.float-link {
+  color: black;
+  padding-top: 8px;
+  text-align: center;
 }
 
 .lower-half {
