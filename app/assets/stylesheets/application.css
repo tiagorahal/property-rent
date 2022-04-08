@@ -48,7 +48,7 @@
 }
 
 footer {
-  background-color: rgb(248,249,254);
+  background-color: rgb(248, 249, 254);
   position: relative;
   bottom: 0;
   width: 100%;
@@ -58,26 +58,24 @@ footer {
 
 .footer-link {
   text-decoration: none;
-  color:white;
+  color: white;
   padding: 0 5px;
 }
 
 .map-responsive {
-  overflow:hidden;
-  padding-bottom:56.25%;
-  position:relative;
-  height:0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
 }
 
 .map-responsive iframe {
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
-
-
 
 .float-link {
   color: black;
